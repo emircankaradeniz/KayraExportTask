@@ -1,19 +1,19 @@
 # Kayra Export Backend Developer Case Study
 
-Bu proje, Backend Developer 3. Aþama task kapsamýnda .NET 8, C#, SQL Server, Onion Architecture, CQRS, JWT, Redis Cache, API Gateway, Rate Limiting, RabbitMQ, Serilog ve Seq kullanýlarak geliþtirilmiþ mikroservis tabanlý bir backend uygulamasýdýr.
+Bu proje, Backend Developer 3. Aï¿½ama task kapsamï¿½nda .NET 8, C#, SQL Server, Onion Architecture, CQRS, JWT, Redis Cache, API Gateway, Rate Limiting, RabbitMQ, Serilog ve Seq kullanï¿½larak geliï¿½tirilmiï¿½ mikroservis tabanlï¿½ bir backend uygulamasï¿½dï¿½r.
 
-## Ýçindekiler
+## ï¿½ï¿½indekiler
 
-- Proje Özeti
-- Mimari Yapý
-- Kullanýlan Teknolojiler
+- Proje ï¿½zeti
+- Mimari Yapï¿½
+- Kullanï¿½lan Teknolojiler
 - Servisler
 - Port Bilgileri
 - Docker Servisleri
 - Kurulum
-- Migration Komutlarý
-- Uygulamayý Çalýþtýrma
-- API Gateway Kullanýmý
+- Migration Komutlarï¿½
+- Uygulamayï¿½ ï¿½alï¿½ï¿½tï¿½rma
+- API Gateway Kullanï¿½mï¿½
 - AuthService API
 - ProductService API
 - LogService API
@@ -23,31 +23,31 @@ Bu proje, Backend Developer 3. Aþama task kapsamýnda .NET 8, C#, SQL Server, Oni
 - Structured Logging
 - API Gateway Rate Limiting
 - Authorization
-- 12 Factor App Uyumluluðu
+- 12 Factor App Uyumluluï¿½u
 - SOLID Prensipleri
 - Branch ve Versiyonlama
 - Proje Durumu
 
-## Proje Özeti
+## Proje ï¿½zeti
 
-Proje üç ana mikroservisten ve bir API Gateway katmanýndan oluþmaktadýr.
+Proje ï¿½ï¿½ ana mikroservisten ve bir API Gateway katmanï¿½ndan oluï¿½maktadï¿½r.
 
 - AuthService
 - ProductService
 - LogService
 - ApiGateway
 
-AuthService kullanýcý kayýt, giriþ, JWT token ve refresh token yönetiminden sorumludur.
+AuthService kullanï¿½cï¿½ kayï¿½t, giriï¿½, JWT token ve refresh token yï¿½netiminden sorumludur.
 
-ProductService ürün ekleme, güncelleme ve listeleme iþlemlerinden sorumludur. ProductService içinde Onion Architecture ve CQRS pattern uygulanmýþtýr.
+ProductService ï¿½rï¿½n ekleme, gï¿½ncelleme ve listeleme iï¿½lemlerinden sorumludur. ProductService iï¿½inde Onion Architecture ve CQRS pattern uygulanmï¿½ï¿½tï¿½r.
 
-LogService merkezi log kayýtlarýný oluþturmak ve sorgulamak için geliþtirilmiþtir.
+LogService merkezi log kayï¿½tlarï¿½nï¿½ oluï¿½turmak ve sorgulamak iï¿½in geliï¿½tirilmiï¿½tir.
 
-ApiGateway YARP Reverse Proxy ile tüm servislere tek giriþ noktasý saðlar ve rate limiting uygular.
+ApiGateway YARP Reverse Proxy ile tï¿½m servislere tek giriï¿½ noktasï¿½ saï¿½lar ve rate limiting uygular.
 
-## Mimari Yapý
+## Mimari Yapï¿½
 
-Proje klasör yapýsý:
+Proje klasï¿½r yapï¿½sï¿½:
 
 ```text
 KayraExportTask
@@ -76,7 +76,7 @@ KayraExportTask
   README.md
 ```
 
-ProductService, Onion Architecture yaklaþýmýyla aþaðýdaki katmanlara ayrýlmýþtýr:
+ProductService, Onion Architecture yaklaï¿½ï¿½mï¿½yla aï¿½aï¿½ï¿½daki katmanlara ayrï¿½lmï¿½ï¿½tï¿½r:
 
 ```text
 ProductService.Domain
@@ -85,17 +85,17 @@ ProductService.Infrastructure
 ProductService.API
 ```
 
-Domain katmaný iþ kurallarýný ve entity yapýlarýný içerir.
+Domain katmanï¿½ iï¿½ kurallarï¿½nï¿½ ve entity yapï¿½larï¿½nï¿½ iï¿½erir.
 
-Application katmaný CQRS command/query handler yapýlarýný, DTO nesnelerini ve abstraction interface'lerini içerir.
+Application katmanï¿½ CQRS command/query handler yapï¿½larï¿½nï¿½, DTO nesnelerini ve abstraction interface'lerini iï¿½erir.
 
-Infrastructure katmaný SQL Server, Redis, RabbitMQ ve repository implementasyonlarýný içerir.
+Infrastructure katmanï¿½ SQL Server, Redis, RabbitMQ ve repository implementasyonlarï¿½nï¿½ iï¿½erir.
 
-API katmaný HTTP endpointlerini ve servis konfigürasyonlarýný içerir.
+API katmanï¿½ HTTP endpointlerini ve servis konfigï¿½rasyonlarï¿½nï¿½ iï¿½erir.
 
-AuthService ve LogService de benzer þekilde Domain, Application, Infrastructure ve API katmanlarýna ayrýlmýþtýr.
+AuthService ve LogService de benzer ï¿½ekilde Domain, Application, Infrastructure ve API katmanlarï¿½na ayrï¿½lmï¿½ï¿½tï¿½r.
 
-## Kullanýlan Teknolojiler
+## Kullanï¿½lan Teknolojiler
 
 - .NET 8
 - C#
@@ -121,29 +121,29 @@ AuthService ve LogService de benzer þekilde Domain, Application, Infrastructure 
 
 ### AuthService
 
-AuthService kullanýcý kimlik doðrulama iþlemlerinden sorumludur.
+AuthService kullanï¿½cï¿½ kimlik doï¿½rulama iï¿½lemlerinden sorumludur.
 
-Özellikler:
+ï¿½zellikler:
 
 - Register
 - Login
 - Refresh Token
 - Microsoft Identity
-- JWT Token üretimi
+- JWT Token ï¿½retimi
 - Role Based Authorization
 - Admin, Manager, User rolleri
 
 ### ProductService
 
-ProductService ürün iþlemlerinden sorumludur.
+ProductService ï¿½rï¿½n iï¿½lemlerinden sorumludur.
 
-Özellikler:
+ï¿½zellikler:
 
-- Ürün listeleme
-- Ürün detay getirme
-- Ürün ekleme
-- Ürün güncelleme
-- JWT doðrulama
+- ï¿½rï¿½n listeleme
+- ï¿½rï¿½n detay getirme
+- ï¿½rï¿½n ekleme
+- ï¿½rï¿½n gï¿½ncelleme
+- JWT doï¿½rulama
 - Policy Based Authorization
 - Redis cache
 - Cache invalidation
@@ -153,21 +153,21 @@ ProductService ürün iþlemlerinden sorumludur.
 
 ### LogService
 
-LogService merkezi log yönetiminden sorumludur.
+LogService merkezi log yï¿½netiminden sorumludur.
 
-Özellikler:
+ï¿½zellikler:
 
-- Log oluþturma
-- Son loglarý listeleme
-- Log seviyesine göre listeleme
-- SQL Server üzerinde log saklama
+- Log oluï¿½turma
+- Son loglarï¿½ listeleme
+- Log seviyesine gï¿½re listeleme
+- SQL Server ï¿½zerinde log saklama
 - Information, Warning, Error, Critical seviyeleri
 
 ### ApiGateway
 
-ApiGateway dýþ dünya ile mikroservisler arasýnda tek giriþ noktasýdýr.
+ApiGateway dï¿½ï¿½ dï¿½nya ile mikroservisler arasï¿½nda tek giriï¿½ noktasï¿½dï¿½r.
 
-Özellikler:
+ï¿½zellikler:
 
 - YARP Reverse Proxy
 - Auth route
@@ -191,26 +191,26 @@ Redis           localhost:6379
 
 ## Docker Servisleri
 
-Docker Compose ile aþaðýdaki destek servisleri ayaða kaldýrýlýr:
+Docker Compose ile aï¿½aï¿½ï¿½daki destek servisleri ayaï¿½a kaldï¿½rï¿½lï¿½r:
 
 - SQL Server
 - Redis
 - RabbitMQ
 - Seq
 
-Docker servislerini baþlatmak için:
+Docker servislerini baï¿½latmak iï¿½in:
 
 ```bash
 docker compose up -d
 ```
 
-Çalýþan containerlarý görmek için:
+ï¿½alï¿½ï¿½an containerlarï¿½ gï¿½rmek iï¿½in:
 
 ```bash
 docker ps
 ```
 
-Docker servislerini durdurmak için:
+Docker servislerini durdurmak iï¿½in:
 
 ```bash
 docker compose down
@@ -218,33 +218,33 @@ docker compose down
 
 ## Kurulum
 
-Projeyi klonladýktan sonra ana dizinde aþaðýdaki komut çalýþtýrýlýr:
+Projeyi klonladï¿½ktan sonra ana dizinde aï¿½aï¿½ï¿½daki komut ï¿½alï¿½ï¿½tï¿½rï¿½lï¿½r:
 
 ```bash
 dotnet restore
 ```
 
-Ardýndan build alýnýr:
+Ardï¿½ndan build alï¿½nï¿½r:
 
 ```bash
 dotnet build
 ```
 
-Entity Framework CLI aracý yüklü deðilse aþaðýdaki komutla yüklenebilir:
+Entity Framework CLI aracï¿½ yï¿½klï¿½ deï¿½ilse aï¿½aï¿½ï¿½daki komutla yï¿½klenebilir:
 
 ```bash
 dotnet tool install --global dotnet-ef --version 8.0.0
 ```
 
-Yüklüyse güncellemek için:
+Yï¿½klï¿½yse gï¿½ncellemek iï¿½in:
 
 ```bash
 dotnet tool update --global dotnet-ef --version 8.0.0
 ```
 
-## Migration Komutlarý
+## Migration Komutlarï¿½
 
-Migration komutlarýndan önce SQL Server container çalýþýyor olmalýdýr.
+Migration komutlarï¿½ndan ï¿½nce SQL Server container ï¿½alï¿½ï¿½ï¿½yor olmalï¿½dï¿½r.
 
 ```bash
 docker compose up -d
@@ -280,14 +280,14 @@ dotnet ef migrations add InitialCreate --project src/Services/LogService/LogServ
 dotnet ef database update --project src/Services/LogService/LogService.Infrastructure --startup-project src/Services/LogService/LogService.API --context LogDbContext
 ```
 
-## Uygulamayý Çalýþtýrma
+## Uygulamayï¿½ ï¿½alï¿½ï¿½tï¿½rma
 
-Her servis ayrý terminalde çalýþtýrýlýr.
+Her servis ayrï¿½ terminalde ï¿½alï¿½ï¿½tï¿½rï¿½lï¿½r.
 
 ### AuthService
 
 ```powershell
-cd C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask
+cd C:\Users\rustl\OneDrive\Masaï¿½stï¿½\KayraExportTask
 $env:ASPNETCORE_ENVIRONMENT="Development"
 $env:DOTNET_SYSTEM_GLOBALIZATION_INVARIANT="false"
 dotnet run --project src/Services/AuthService/AuthService.API/AuthService.API.csproj
@@ -296,7 +296,7 @@ dotnet run --project src/Services/AuthService/AuthService.API/AuthService.API.cs
 ### ProductService
 
 ```powershell
-cd C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask
+cd C:\Users\rustl\OneDrive\Masaï¿½stï¿½\KayraExportTask
 $env:ASPNETCORE_ENVIRONMENT="Development"
 $env:DOTNET_SYSTEM_GLOBALIZATION_INVARIANT="false"
 dotnet run --project src/Services/ProductService/ProductService.API/ProductService.API.csproj
@@ -305,7 +305,7 @@ dotnet run --project src/Services/ProductService/ProductService.API/ProductServi
 ### LogService
 
 ```powershell
-cd C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask
+cd C:\Users\rustl\OneDrive\Masaï¿½stï¿½\KayraExportTask
 $env:ASPNETCORE_ENVIRONMENT="Development"
 $env:DOTNET_SYSTEM_GLOBALIZATION_INVARIANT="false"
 dotnet run --project src/Services/LogService/LogService.API/LogService.API.csproj
@@ -314,13 +314,13 @@ dotnet run --project src/Services/LogService/LogService.API/LogService.API.cspro
 ### ApiGateway
 
 ```powershell
-cd C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask
+cd C:\Users\rustl\OneDrive\Masaï¿½stï¿½\KayraExportTask
 $env:ASPNETCORE_ENVIRONMENT="Development"
 $env:DOTNET_SYSTEM_GLOBALIZATION_INVARIANT="false"
 dotnet run --project src/ApiGateway/ApiGateway.csproj
 ```
 
-## API Gateway Kullanýmý
+## API Gateway Kullanï¿½mï¿½
 
 Gateway ana endpoint:
 
@@ -360,7 +360,7 @@ Auth login:
 POST http://localhost:5000/api/auth/login
 ```
 
-PowerShell ile Gateway üzerinden login testi:
+PowerShell ile Gateway ï¿½zerinden login testi:
 
 ```powershell
 Invoke-RestMethod -Method Post `
@@ -409,7 +409,7 @@ Request:
 }
 ```
 
-Response içinde `accessToken` ve `refreshToken` döner.
+Response iï¿½inde `accessToken` ve `refreshToken` dï¿½ner.
 
 ### Refresh Token
 
@@ -440,7 +440,7 @@ http://localhost:5053/swagger
 GET /api/products
 ```
 
-Bu endpoint anonymous eriþime açýktýr.
+Bu endpoint anonymous eriï¿½ime aï¿½ï¿½ktï¿½r.
 
 ### Product Detail
 
@@ -448,7 +448,7 @@ Bu endpoint anonymous eriþime açýktýr.
 GET /api/products/{id}
 ```
 
-Bu endpoint anonymous eriþime açýktýr.
+Bu endpoint anonymous eriï¿½ime aï¿½ï¿½ktï¿½r.
 
 ### Create Product
 
@@ -456,7 +456,7 @@ Bu endpoint anonymous eriþime açýktýr.
 POST /api/products
 ```
 
-Bu endpoint JWT token ister. Kullanýcý `Admin` veya `Manager` rolünde olmalýdýr.
+Bu endpoint JWT token ister. Kullanï¿½cï¿½ `Admin` veya `Manager` rolï¿½nde olmalï¿½dï¿½r.
 
 Request:
 
@@ -476,7 +476,7 @@ Request:
 PUT /api/products/{id}
 ```
 
-Bu endpoint JWT token ister. Kullanýcý `Admin` veya `Manager` rolünde olmalýdýr.
+Bu endpoint JWT token ister. Kullanï¿½cï¿½ `Admin` veya `Manager` rolï¿½nde olmalï¿½dï¿½r.
 
 Request:
 
@@ -490,7 +490,7 @@ Request:
 }
 ```
 
-Product status deðerleri:
+Product status deï¿½erleri:
 
 ```text
 1 Draft
@@ -539,7 +539,7 @@ GET /api/logs?count=50
 GET /api/logs/level/1?count=50
 ```
 
-Log level deðerleri:
+Log level deï¿½erleri:
 
 ```text
 1 Information
@@ -550,17 +550,17 @@ Log level deðerleri:
 
 ## Test Senaryosu
 
-1. Docker servislerini baþlat.
+1. Docker servislerini baï¿½lat.
 
 ```bash
 docker compose up -d
 ```
 
-2. Migration komutlarýný çalýþtýr.
+2. Migration komutlarï¿½nï¿½ ï¿½alï¿½ï¿½tï¿½r.
 
-3. AuthService, ProductService, LogService ve ApiGateway servislerini ayrý terminallerde baþlat.
+3. AuthService, ProductService, LogService ve ApiGateway servislerini ayrï¿½ terminallerde baï¿½lat.
 
-4. AuthService üzerinden Admin kullanýcý oluþtur.
+4. AuthService ï¿½zerinden Admin kullanï¿½cï¿½ oluï¿½tur.
 
 ```json
 {
@@ -573,33 +573,33 @@ docker compose up -d
 
 5. Login endpointi ile access token al.
 
-6. ProductService Swagger üzerinde Authorize butonuna týkla.
+6. ProductService Swagger ï¿½zerinde Authorize butonuna tï¿½kla.
 
-7. Token deðerini þu formatta gir.
+7. Token deï¿½erini ï¿½u formatta gir.
 
 ```text
 Bearer access-token-value
 ```
 
-8. ProductService üzerinden ürün oluþtur.
+8. ProductService ï¿½zerinden ï¿½rï¿½n oluï¿½tur.
 
-9. ProductService üzerinden ürünleri listele.
+9. ProductService ï¿½zerinden ï¿½rï¿½nleri listele.
 
-10. Gateway üzerinden ürünleri listele.
+10. Gateway ï¿½zerinden ï¿½rï¿½nleri listele.
 
 ```text
 http://localhost:5000/api/products
 ```
 
-11. LogService üzerinden log oluþtur.
+11. LogService ï¿½zerinden log oluï¿½tur.
 
-12. Gateway üzerinden loglarý listele.
+12. Gateway ï¿½zerinden loglarï¿½ listele.
 
 ```text
 http://localhost:5000/api/logs?count=50
 ```
 
-13. Seq panelinden structured loglarý kontrol et.
+13. Seq panelinden structured loglarï¿½ kontrol et.
 
 ```text
 http://localhost:5341
@@ -607,39 +607,39 @@ http://localhost:5341
 
 ## Redis Cache ve Cache Invalidation
 
-Product listeleme iþlemlerinde Redis cache kullanýlýr.
+Product listeleme iï¿½lemlerinde Redis cache kullanï¿½lï¿½r.
 
-Akýþ:
+Akï¿½ï¿½:
 
 ```text
 GET /api/products
-  önce Redis kontrol edilir
-  cache varsa Redis üzerinden response döner
+  ï¿½nce Redis kontrol edilir
+  cache varsa Redis ï¿½zerinden response dï¿½ner
   cache yoksa SQL Server'dan veri okunur
-  sonuç Redis'e yazýlýr
+  sonuï¿½ Redis'e yazï¿½lï¿½r
 ```
 
-Ürün ekleme veya güncelleme iþlemlerinden sonra cache invalidation yapýlýr.
+ï¿½rï¿½n ekleme veya gï¿½ncelleme iï¿½lemlerinden sonra cache invalidation yapï¿½lï¿½r.
 
-Akýþ:
+Akï¿½ï¿½:
 
 ```text
 POST /api/products
-  ürün SQL Server'a kaydedilir
+  ï¿½rï¿½n SQL Server'a kaydedilir
   Redis product list cache temizlenir
   RabbitMQ event publish edilir
 ```
 
 ```text
 PUT /api/products/{id}
-  ürün SQL Server'da güncellenir
+  ï¿½rï¿½n SQL Server'da gï¿½ncellenir
   Redis product list cache temizlenir
   RabbitMQ event publish edilir
 ```
 
 ## Event Driven Mimari
 
-ProductService içinde ürün ekleme ve ürün güncelleme iþlemlerinden sonra RabbitMQ üzerinden integration event publish edilir.
+ProductService iï¿½inde ï¿½rï¿½n ekleme ve ï¿½rï¿½n gï¿½ncelleme iï¿½lemlerinden sonra RabbitMQ ï¿½zerinden integration event publish edilir.
 
 Eventler:
 
@@ -654,7 +654,7 @@ RabbitMQ Management UI:
 http://localhost:15672
 ```
 
-Default kullanýcý bilgileri:
+Default kullanï¿½cï¿½ bilgileri:
 
 ```text
 username: guest
@@ -663,9 +663,9 @@ password: guest
 
 ## Structured Logging
 
-Projede Serilog ve Seq kullanýlmýþtýr.
+Projede Serilog ve Seq kullanï¿½lmï¿½ï¿½tï¿½r.
 
-Her servis aþaðýdaki bilgilerle structured log üretir:
+Her servis aï¿½aï¿½ï¿½daki bilgilerle structured log ï¿½retir:
 
 ```text
 Timestamp
@@ -687,7 +687,7 @@ Seq paneli:
 http://localhost:5341
 ```
 
-Servis bazlý filtre örnekleri:
+Servis bazlï¿½ filtre ï¿½rnekleri:
 
 ```text
 ServiceName = 'AuthService'
@@ -698,9 +698,9 @@ ServiceName = 'ApiGateway'
 
 ## API Gateway Rate Limiting
 
-ApiGateway üzerinde global fixed window rate limiting uygulanmýþtýr.
+ApiGateway ï¿½zerinde global fixed window rate limiting uygulanmï¿½ï¿½tï¿½r.
 
-Varsayýlan ayar:
+Varsayï¿½lan ayar:
 
 ```text
 100 request / 1 minute
@@ -708,11 +708,11 @@ Queue limit: 20
 Rejected response: 429 Too Many Requests
 ```
 
-Bu yapý API isteklerini merkezi olarak kontrol altýna almak için eklenmiþtir.
+Bu yapï¿½ API isteklerini merkezi olarak kontrol altï¿½na almak iï¿½in eklenmiï¿½tir.
 
 ## Authorization
 
-Projede hem role based hem de policy based authorization uygulanmýþtýr.
+Projede hem role based hem de policy based authorization uygulanmï¿½ï¿½tï¿½r.
 
 Roller:
 
@@ -722,13 +722,13 @@ Manager
 User
 ```
 
-ProductService yazma iþlemleri için kullanýlan policy:
+ProductService yazma iï¿½lemleri iï¿½in kullanï¿½lan policy:
 
 ```text
 ProductWritePolicy
 ```
 
-Bu policy `Admin` veya `Manager` rolü ister.
+Bu policy `Admin` veya `Manager` rolï¿½ ister.
 
 Korunan endpointler:
 
@@ -737,85 +737,85 @@ POST /api/products
 PUT /api/products/{id}
 ```
 
-## 12 Factor App Uyumluluðu
+## 12 Factor App Uyumluluï¿½u
 
 ### Codebase
 
-Tüm proje tek bir merkezi solution altýnda yönetilmektedir.
+Tï¿½m proje tek bir merkezi solution altï¿½nda yï¿½netilmektedir.
 
 ### Dependencies
 
-Tüm baðýmlýlýklar NuGet paketleri üzerinden tanýmlanmýþtýr.
+Tï¿½m baï¿½ï¿½mlï¿½lï¿½klar NuGet paketleri ï¿½zerinden tanï¿½mlanmï¿½ï¿½tï¿½r.
 
 ### Config
 
-Connection string, JWT, Redis, RabbitMQ ve Seq ayarlarý appsettings üzerinden yönetilmektedir. Production ortamýnda bu ayarlar environment variable olarak verilebilir.
+Connection string, JWT, Redis, RabbitMQ ve Seq ayarlarï¿½ appsettings ï¿½zerinden yï¿½netilmektedir. Production ortamï¿½nda bu ayarlar environment variable olarak verilebilir.
 
 ### Backing Services
 
-SQL Server, Redis, RabbitMQ ve Seq baðýmsýz destek servisleri olarak Docker Compose ile yönetilmektedir.
+SQL Server, Redis, RabbitMQ ve Seq baï¿½ï¿½msï¿½z destek servisleri olarak Docker Compose ile yï¿½netilmektedir.
 
 ### Build, Release, Run
 
-Build ve runtime süreçleri ayrýdýr. Proje önce restore/build edilir, ardýndan servisler ayrý process olarak çalýþtýrýlýr.
+Build ve runtime sï¿½reï¿½leri ayrï¿½dï¿½r. Proje ï¿½nce restore/build edilir, ardï¿½ndan servisler ayrï¿½ process olarak ï¿½alï¿½ï¿½tï¿½rï¿½lï¿½r.
 
 ### Processes
 
-Servisler stateless olacak þekilde tasarlanmýþtýr. State SQL Server, Redis ve RabbitMQ gibi external servislerde tutulur.
+Servisler stateless olacak ï¿½ekilde tasarlanmï¿½ï¿½tï¿½r. State SQL Server, Redis ve RabbitMQ gibi external servislerde tutulur.
 
 ### Port Binding
 
-Her servis kendi portunda çalýþýr. ApiGateway dýþ giriþ noktasýdýr.
+Her servis kendi portunda ï¿½alï¿½ï¿½ï¿½r. ApiGateway dï¿½ï¿½ giriï¿½ noktasï¿½dï¿½r.
 
 ### Concurrency
 
-Servisler baðýmsýz process olarak çalýþtýðý için yatay ölçeklemeye uygundur.
+Servisler baï¿½ï¿½msï¿½z process olarak ï¿½alï¿½ï¿½tï¿½ï¿½ï¿½ iï¿½in yatay ï¿½lï¿½eklemeye uygundur.
 
 ### Disposability
 
-ASP.NET Core lifecycle yapýsý kullanýlýr. Servisler Ctrl+C veya process stop ile güvenli þekilde durdurulabilir.
+ASP.NET Core lifecycle yapï¿½sï¿½ kullanï¿½lï¿½r. Servisler Ctrl+C veya process stop ile gï¿½venli ï¿½ekilde durdurulabilir.
 
 ### Dev/Prod Parity
 
-Docker Compose ile destek servisleri local ortamda production benzeri þekilde çalýþtýrýlýr.
+Docker Compose ile destek servisleri local ortamda production benzeri ï¿½ekilde ï¿½alï¿½ï¿½tï¿½rï¿½lï¿½r.
 
 ### Logs
 
-Loglar Serilog ile console ve Seq üzerine structured formatta aktarýlýr.
+Loglar Serilog ile console ve Seq ï¿½zerine structured formatta aktarï¿½lï¿½r.
 
 ### Admin Processes
 
-Migration iþlemleri dotnet ef komutlarý ile ayrý admin process olarak yürütülür.
+Migration iï¿½lemleri dotnet ef komutlarï¿½ ile ayrï¿½ admin process olarak yï¿½rï¿½tï¿½lï¿½r.
 
 ## SOLID Prensipleri
 
 ### Single Responsibility Principle
 
-Her servis ve katman tek bir sorumluluk alanýna sahiptir.
+Her servis ve katman tek bir sorumluluk alanï¿½na sahiptir.
 
 ### Open/Closed Principle
 
-Application katmanýndaki abstraction yapýlarý sayesinde yeni repository, cache veya event bus implementasyonlarý mevcut kodu bozmadan eklenebilir.
+Application katmanï¿½ndaki abstraction yapï¿½larï¿½ sayesinde yeni repository, cache veya event bus implementasyonlarï¿½ mevcut kodu bozmadan eklenebilir.
 
 ### Liskov Substitution Principle
 
-Interface üzerinden çalýþan servisler farklý implementasyonlarla deðiþtirilebilir.
+Interface ï¿½zerinden ï¿½alï¿½ï¿½an servisler farklï¿½ implementasyonlarla deï¿½iï¿½tirilebilir.
 
 ### Interface Segregation Principle
 
-Repository, cache, event bus ve unit of work sorumluluklarý ayrý interface'lere bölünmüþtür.
+Repository, cache, event bus ve unit of work sorumluluklarï¿½ ayrï¿½ interface'lere bï¿½lï¿½nmï¿½ï¿½tï¿½r.
 
 ### Dependency Inversion Principle
 
-Application katmaný Infrastructure katmanýna doðrudan baðýmlý deðildir. Baðýmlýlýklar abstraction üzerinden yönetilir.
+Application katmanï¿½ Infrastructure katmanï¿½na doï¿½rudan baï¿½ï¿½mlï¿½ deï¿½ildir. Baï¿½ï¿½mlï¿½lï¿½klar abstraction ï¿½zerinden yï¿½netilir.
 
 ## Branch ve Versiyonlama
 
-Task gereksinimine uygun branch yapýsý:
+Task gereksinimine uygun branch yapï¿½sï¿½:
 
 ## Proje Durumu
 
-Tamamlanan baþlýklar:
+Tamamlanan baï¿½lï¿½klar:
 
 ```text
 Auth Microservice
@@ -841,11 +841,11 @@ Swagger Documentation
 Rate Limiting
 ```
 
-## Gönderim Notu
+## Gï¿½nderim Notu
 
-Proje çalýþtýrýlmadan önce Docker servisleri baþlatýlmalý, migration komutlarý uygulanmalý ve ardýndan servisler ayrý terminal pencerelerinde çalýþtýrýlmalýdýr.
+Proje ï¿½alï¿½ï¿½tï¿½rï¿½lmadan ï¿½nce Docker servisleri baï¿½latï¿½lmalï¿½, migration komutlarï¿½ uygulanmalï¿½ ve ardï¿½ndan servisler ayrï¿½ terminal pencerelerinde ï¿½alï¿½ï¿½tï¿½rï¿½lmalï¿½dï¿½r.
 
-Ana giriþ noktasý ApiGateway servisidir:
+Ana giriï¿½ noktasï¿½ ApiGateway servisidir:
 
 ```text
 http://localhost:5000
