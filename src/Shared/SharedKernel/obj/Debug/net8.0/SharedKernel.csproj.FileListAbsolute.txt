@@ -5,6 +5,7 @@ C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Shared\SharedKernel\obj\D
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Shared\SharedKernel\obj\Debug\net8.0\SharedKernel.AssemblyInfoInputs.cache
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Shared\SharedKernel\obj\Debug\net8.0\SharedKernel.AssemblyInfo.cs
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Shared\SharedKernel\obj\Debug\net8.0\SharedKernel.csproj.CoreCompileInputs.cache
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Shared\SharedKernel\obj\Debug\net8.0\SharedKernel.sourcelink.json
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Shared\SharedKernel\obj\Debug\net8.0\SharedKernel.dll
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Shared\SharedKernel\obj\Debug\net8.0\refint\SharedKernel.dll
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Shared\SharedKernel\obj\Debug\net8.0\SharedKernel.pdb

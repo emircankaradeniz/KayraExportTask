@@ -5,6 +5,7 @@ C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\LogService\LogSe
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\LogService\LogService.Domain\obj\Debug\net8.0\LogService.Domain.AssemblyInfoInputs.cache
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\LogService\LogService.Domain\obj\Debug\net8.0\LogService.Domain.AssemblyInfo.cs
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\LogService\LogService.Domain\obj\Debug\net8.0\LogService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\LogService\LogService.Domain\obj\Debug\net8.0\LogService.Domain.sourcelink.json
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\LogService\LogService.Domain\obj\Debug\net8.0\LogService.Domain.dll
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\LogService\LogService.Domain\obj\Debug\net8.0\refint\LogService.Domain.dll
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\LogService\LogService.Domain\obj\Debug\net8.0\LogService.Domain.pdb

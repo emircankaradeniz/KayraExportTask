@@ -10,6 +10,7 @@ C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\P
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Application\obj\Debug\net8.0\ProductService.Application.AssemblyInfoInputs.cache
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Application\obj\Debug\net8.0\ProductService.Application.AssemblyInfo.cs
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Application\obj\Debug\net8.0\ProductService.Application.csproj.CoreCompileInputs.cache
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Application\obj\Debug\net8.0\ProductService.Application.sourcelink.json
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Application\obj\Debug\net8.0\ProductService.Application.csproj.CopyComplete
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Application\obj\Debug\net8.0\ProductService.Application.dll
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Application\obj\Debug\net8.0\refint\ProductService.Application.dll

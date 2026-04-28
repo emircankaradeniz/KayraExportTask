@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Znfy9usxzgamjGBov9R2SbwCmCQotu2TqtHngzkxv0um1siQYsKz2s3vqDagEe/PAjIaJtly/2geh2JCQB3V3w==",
+  "dgSpecHash": "NaLp5a0nYZNBlx4fxYt3Oiux0LTEwbAOFy8h41lEWA2ovbh7v2AYUQFAJh7D4YTYPRQ0g7fBBcH6tYcgd3QBPQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\rustl\\OneDrive\\Masaüstü\\KayraExportTask\\src\\Services\\ProductService\\ProductService.Application\\ProductService.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\rustl\\.nuget\\packages\\mediatr\\12.5.0\\mediatr.12.5.0.nupkg.sha512",
+    "C:\\Users\\rustl\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\rustl\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

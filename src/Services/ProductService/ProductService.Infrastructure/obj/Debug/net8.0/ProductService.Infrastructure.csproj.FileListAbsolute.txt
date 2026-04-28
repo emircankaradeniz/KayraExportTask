@@ -1,4 +1,5 @@
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Infrastructure\bin\Debug\net8.0\ProductService.Infrastructure.deps.json
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Infrastructure\bin\Debug\net8.0\ProductService.Infrastructure.runtimeconfig.json
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Infrastructure\bin\Debug\net8.0\ProductService.Infrastructure.dll
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Infrastructure\bin\Debug\net8.0\ProductService.Infrastructure.pdb
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Infrastructure\bin\Debug\net8.0\ProductService.Application.dll
@@ -12,8 +13,10 @@ C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\P
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.AssemblyInfo.cs
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.sourcelink.json
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.csproj.CopyComplete
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.dll
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Infrastructure\obj\Debug\net8.0\refint\ProductService.Infrastructure.dll
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.pdb
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.genruntimeconfig.cache
 C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Infrastructure\obj\Debug\net8.0\ref\ProductService.Infrastructure.dll

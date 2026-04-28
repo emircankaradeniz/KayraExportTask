@@ -46,6 +46,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.5.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -89,7 +95,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\rustl\\OneDrive\\Masaüstü\\KayraExportTask\\src\\Shared\\SharedKernel\\SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\rustl\\OneDrive\\Masaüstü\\KayraExportTask\\src\\Shared\\SharedKernel\\SharedKernel.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

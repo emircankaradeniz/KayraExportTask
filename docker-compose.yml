@@ -1,0 +1,60 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: kayraexport-sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Your_strong_password123"
+      MSSQL_PID: "Developer"
+    ports:
+      - "1433:1433"
+    volumes:
+      - kayraexport_sqlserver_data:/var/opt/mssql
+    networks:
+      - kayraexport-network
+
+  redis:
+    image: redis:7.4-alpine
+    container_name: kayraexport-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - kayraexport_redis_data:/data
+    networks:
+      - kayraexport-network
+
+  rabbitmq:
+    image: rabbitmq:3.13-management
+    container_name: kayraexport-rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: "guest"
+      RABBITMQ_DEFAULT_PASS: "guest"
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - kayraexport_rabbitmq_data:/var/lib/rabbitmq
+    networks:
+      - kayraexport-network
+
+  seq:
+    image: datalust/seq:2024.3
+    container_name: kayraexport-seq
+    environment:
+      ACCEPT_EULA: "Y"
+    ports:
+      - "5341:80"
+    volumes:
+      - kayraexport_seq_data:/data
+    networks:
+      - kayraexport-network
+
+volumes:
+  kayraexport_sqlserver_data:
+  kayraexport_redis_data:
+  kayraexport_rabbitmq_data:
+  kayraexport_seq_data:
+
+networks:
+  kayraexport-network:
+    driver: bridge
