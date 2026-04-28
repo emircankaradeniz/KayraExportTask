@@ -1,0 +1,17 @@
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\AuthService\AuthService.Application\bin\Debug\net8.0\AuthService.Application.deps.json
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\AuthService\AuthService.Application\bin\Debug\net8.0\AuthService.Application.dll
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\AuthService\AuthService.Application\bin\Debug\net8.0\AuthService.Application.pdb
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\AuthService\AuthService.Application\bin\Debug\net8.0\AuthService.Domain.dll
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\AuthService\AuthService.Application\bin\Debug\net8.0\SharedKernel.dll
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\AuthService\AuthService.Application\bin\Debug\net8.0\AuthService.Domain.pdb
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\AuthService\AuthService.Application\bin\Debug\net8.0\SharedKernel.pdb
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\AuthService\AuthService.Application\obj\Debug\net8.0\AuthService.Application.csproj.AssemblyReference.cache
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\AuthService\AuthService.Application\obj\Debug\net8.0\AuthService.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\AuthService\AuthService.Application\obj\Debug\net8.0\AuthService.Application.AssemblyInfoInputs.cache
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\AuthService\AuthService.Application\obj\Debug\net8.0\AuthService.Application.AssemblyInfo.cs
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\AuthService\AuthService.Application\obj\Debug\net8.0\AuthService.Application.csproj.CoreCompileInputs.cache
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\AuthService\AuthService.Application\obj\Debug\net8.0\AuthService.Application.csproj.CopyComplete
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\AuthService\AuthService.Application\obj\Debug\net8.0\AuthService.Application.dll
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\AuthService\AuthService.Application\obj\Debug\net8.0\refint\AuthService.Application.dll
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\AuthService\AuthService.Application\obj\Debug\net8.0\AuthService.Application.pdb
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\AuthService\AuthService.Application\obj\Debug\net8.0\ref\AuthService.Application.dll

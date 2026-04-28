@@ -1,0 +1,11 @@
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Domain\bin\Debug\net8.0\ProductService.Domain.deps.json
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Domain\bin\Debug\net8.0\ProductService.Domain.dll
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Domain\bin\Debug\net8.0\ProductService.Domain.pdb
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Domain\obj\Debug\net8.0\ProductService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Domain\obj\Debug\net8.0\ProductService.Domain.AssemblyInfoInputs.cache
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Domain\obj\Debug\net8.0\ProductService.Domain.AssemblyInfo.cs
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Domain\obj\Debug\net8.0\ProductService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Domain\obj\Debug\net8.0\ProductService.Domain.dll
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Domain\obj\Debug\net8.0\refint\ProductService.Domain.dll
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Domain\obj\Debug\net8.0\ProductService.Domain.pdb
+C:\Users\rustl\OneDrive\Masaüstü\KayraExportTask\src\Services\ProductService\ProductService.Domain\obj\Debug\net8.0\ref\ProductService.Domain.dll
